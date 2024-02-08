@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AquariumFish2.github.io/quotes",
+  "homepage": "https://AquariumFish2.github.io/quote-generator",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

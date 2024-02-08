@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
-function Quote(props) {
+function Quote() {
     const COLORS = ['black', 'red', 'blue','purple','grey','coral','pink','green','yellow','brown'];
 
     const [data, setData] = useState(null)
