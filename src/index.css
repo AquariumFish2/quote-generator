@@ -1,0 +1,91 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.quote-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(16, 100%, 66%);
+  transition: background-color 2s;
+  -webkit-transition: background-color 2s;
+  -moz-transition: background-color 2s;
+  -ms-transition: background-color 2s;
+  -o-transition: background-color 2s;
+}
+
+.quote-card{
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 70vw;
+  transition-property: color opacity;
+  transition-duration: 2s;
+  padding: 10px;
+  opacity: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+p,q{
+  margin: 10px 0;
+  font-size: 1.4em;
+}
+
+.update-button{
+  color:white;
+  background-color: hsl(16, 100%, 66%);
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: background-color 2s;
+  -webkit-transition: background-color 2s;
+  -moz-transition: background-color 2s;
+  -ms-transition: background-color 2s;
+  -o-transition: background-color 2s;
+}
+
+.update-button:hover{
+  opacity: 80%;
+}
+
+@keyframes FadeAnimation {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+@media (min-width:1000px) {
+  .quote-card{
+    width: 50vw;
+  }
+}
