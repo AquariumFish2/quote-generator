@@ -89,3 +89,41 @@ p,q{
     width: 50vw;
   }
 }
+
+.container div {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: pink;
+}
+
+.container div {
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.two {
+  animation-delay: 0.3s;
+}
+
+.three {
+  animation-delay: 0.6s;
+}
+
+@keyframes loading {
+  to {
+    transform: scale(1.2) translateY(-30px);
+    -webkit-transform: scale(1.2) translateY(-30px);
+    -moz-transform: scale(1.2) translateY(-30px);
+    -ms-transform: scale(1.2) translateY(-30px);
+    -o-transform: scale(1.2) translateY(-30px);
+  }
+}
