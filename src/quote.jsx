@@ -8,7 +8,7 @@ function Quote() {
     const [index, setIndex] = useState(0)
     const [opacity, setOpacity] = useState(0)
     const [colorIndex, setColorIndex] = useState(0)
-
+    document.title = "Quotes Generator"
 
     function updateColorIndex() {
         setColorIndex(Math.floor(Math.random() * 10))
