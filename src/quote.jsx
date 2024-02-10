@@ -65,6 +65,10 @@ function Quote() {
             </p>
             <button className='update-button' onClick={updateIndex} style={{ backgroundColor: COLORS[colorIndex] }}>Next</button>
         </div>
-    </div> : <div>Loading</div>
+    </div> : <div className="container">
+        <div className="one"></div>
+        <div className="two"></div>
+        <div className="three"></div>
+    </div>
 }
 export default Quote
